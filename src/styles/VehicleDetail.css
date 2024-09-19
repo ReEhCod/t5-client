@@ -1,0 +1,114 @@
+
+.vehicle-detail-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.vehicle-detail-container h3{
+    text-align: center;
+    margin: 0 10 0 10;
+    font-size: 1rem;
+    color: #333;
+}
+.vehicle-detail-header {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #333;
+}
+
+.vehicle-info {
+    margin-bottom: 20px;
+}
+
+.vehicle-info h6 {
+    font-size: 1.2rem;
+    color: #555;
+    margin: 5px 0;
+}
+
+.equipment-list {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.equipment-list li {
+    display: block;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+.equipment-element{
+    display: flex;
+    justify-content: space-around;
+    padding: 5px 0;
+    font-size: 1rem;
+    color: #333;
+}
+
+.equipment-list li p {
+    margin: 5px 0;
+    font-size: 1rem;
+    color: #666;
+}
+.btn-group{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.vehicle-detail-container button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.delete-button {
+    background-color: #920505;
+    color: white;
+    transition: background-color 0.4s ease-in-out;
+}
+
+.delete-button:hover {
+    background-color: #cb1400;
+}
+
+.update-button {
+    background-color: #043f7f;
+    color: white;
+    transition: background-color 0.25s ease-in ;
+}
+
+.update-button:hover {
+    background-color: #007bff;
+    
+}
+
+@media (max-width: 768px) {
+    .vehicle-detail-container {
+        padding: 10px;
+    }
+
+    .vehicle-info h6 {
+        font-size: 1rem;
+    }
+
+    .equipment-list li {
+        padding: 8px;
+    }
+
+    .equipment-list li h4 {
+        font-size: 1rem;
+    }
+}

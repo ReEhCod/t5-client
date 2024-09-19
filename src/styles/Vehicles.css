@@ -1,0 +1,90 @@
+.vehicles-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.vehicles-header {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #333;
+}
+
+.add-vehicle-button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #043f7f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.add-vehicle-button:hover {
+    background-color: #007bff;
+}
+
+.vehicle-grid {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.vehicle-grid-header {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    padding: 10px;
+    background-color: #28577b;
+    color: white;
+    font-weight: bold;
+}
+
+.vehicle-grid-row {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.vehicle-grid-row:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.vehicle-grid-row:nth-child(odd) {
+    background-color: #fff;
+}
+
+.vehicle-grid-row a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.vehicle-grid-row a:hover {
+    color: #0056b3;
+}
+
+@media (max-width: 768px) {
+    .add-vehicle-button {
+        width: 100%;
+        font-size: 0.9rem;
+    }
+
+    .vehicle-grid {
+        flex-direction: column;
+    }
+
+    .vehicle-grid-header,
+    .vehicle-grid-row {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+}
