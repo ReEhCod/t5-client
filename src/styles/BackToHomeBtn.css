@@ -1,0 +1,20 @@
+.back-btn {
+    background-color: #4b0c15;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    margin: 3% 0;
+    font-size: 1rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.back-btn:hover {
+    background-color: #9b575d;
+}
+
+.back-btn .fa-arrow-left {
+    margin-right: 8px;
+}
